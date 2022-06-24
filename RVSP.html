@@ -1,0 +1,38 @@
+<!--this will be the practice page for making a RVSP part of the site-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVSP site</title>
+    <link rel="stylesheet" href="style/style.css"> 
+</head>
+<body>        <!--I want to be able to put in names and only allow anyone with that name to continue to the RVSP page. That might mean that I need to create a database with their names and have python state "if (database_variable_name) == (name/column #) then go to website."-->
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="RVSP.html">RVSP</a>
+        
+    </nav>
+
+    <section>
+
+        <h3> please note, you should only be putting in your name or your spouses name. If you are under 18, you are under your parents names and your parents will take care of your invatation.</h3>
+        <!--code taken from "https://www.w3schools.com/html/html_forms.asp"-->
+        
+        <!--this creates the form-->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+        <!--just shows the submit button, currently dosent do anything-->
+        <input type="submit">
+    </section>
+    <!---after their name is typed it leads to another page that goes to answer_RVSP.html-->
+
+</body>
+</html>
